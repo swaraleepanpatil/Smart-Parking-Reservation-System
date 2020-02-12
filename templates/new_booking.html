@@ -1,0 +1,39 @@
+{% extends "front.html" %}
+{% block content %}
+<title>Book Slot</title>
+<h2 style="text-align: center;">Book Slot</h2>
+<div class="container">
+    <form action="http://localhost:5000/booking" method="POST" style="width: 500px; margin:auto">
+        <div class="form-group">
+            <lable for="First_Name">First Name:</lable>
+            <input type="text" class="form-control" name="First_Name" required>
+
+            <lable for="Last_Name">Last Name:</lable>
+            <input type="text" class="form-control" name="Last_Name" required>
+
+            <lable for="Email">Email:</lable>
+            <input type="Email" class="form-control" name="Email" required>
+
+            <lable for="Phone">Phone:</lable>
+            <input type="text" class="form-control" name="Phone" required>
+
+            <lable for="Vehicle_No">Vehicle No.:</lable>
+            <input type="text" class="form-control" name="Vehicle_No" required> 
+
+            <lable for="Slot_ID">Slot_ID:</lable>
+            <input type="text" class="form-control" name="Slot_ID" required>
+
+            <lable for="Date">Date:</lable>
+            <input type="Date" class="form-control" name="Date"required>
+            
+            <lable for="Time">Time:</lable>
+            <input type="Time" class="form-control" name="Time" required>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Book</button>
+            </div>
+        </div>
+</div>
+</form>
+
+{% endblock %}

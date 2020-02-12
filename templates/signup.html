@@ -1,0 +1,26 @@
+{% extends "front.html" %}
+{% block content %}
+<title>Signup</title>
+<h2 style="text-align: center;">User Registration</h2>
+<div class="container">
+    <form action="http://localhost:5000/signup" method="POST" style="width: 500px; margin:auto">
+        <div class="form-group">
+            <lable for="First_Name">First Name:</lable>
+            <input type="First_Name" class="form-control" name="First_Name"required>
+
+            <lable for="Last_Name">Last Name:</lable>
+            <input type="Last_Name" class="form-control" name="Last_Name"required>
+
+            <lable for="Email">Email:</lable>
+            <input type="Email" class="form-control" name="Email"required>
+
+            <lable for="Password">Password:</lable>
+            <input type="Password" class="form-control" name="Password"required>
+
+            <div class="form-group">
+                <button class="btn btn-success">Sign Up</button>
+            </div>
+        </div>
+</div>
+</form>
+{% endblock %}
